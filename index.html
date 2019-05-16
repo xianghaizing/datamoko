@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线模拟数据</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        p, span {
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p {
+            display: inline-block;
+        }
+        table {
+            table-layout: fixed;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="pull-left">模拟数据</h3>
+            </div>
+            <div class="col-md-9">
+                <span class="bg-success" id="temp"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                列数:
+            </div>
+            <div class="col-md-7">
+                <span class="bg-success col">3</span>
+                <span class="col">5</span>
+                <span class="col">8</span>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary" id="ip">随机IP</button>
+                <button type="button" class="btn btn-primary" id="url">随机url</button>
+                <button type="button" class="btn btn-primary" id="city">随机city</button>
+                <button type="button" class="btn btn-danger" id="clear">清除</button>
+                <button type="button" class="btn btn-success" id="create">生成</button>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                <tr id="title"></tr>
+                </thead>
+                <tbody>
+                <tr id="cont"></tr>
+                <tr id="op"></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <textarea class="form-control" id="test_data" rows="10"></textarea>
+        </div>
+    </div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
