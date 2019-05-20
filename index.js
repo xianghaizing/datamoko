@@ -117,6 +117,8 @@ $('#create').click(function () {
 
 $(function () {
     init(col);
+    $('input').eq(0).attr('placeholder','回车生成标签');
+    $('input').eq(2).attr('placeholder','多个标签以","逗号分隔');
     var vStr = localStorage.getItem("data");
     if (!!vStr) {
         $(vStr.split("|")).each(function (i) {
